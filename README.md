@@ -1,4 +1,4 @@
-# CRUD-Controle-usuario
+# CRUD-Controle-usuario com MySQL
 
 A unica tabela no banco tem esta estrutura
 
