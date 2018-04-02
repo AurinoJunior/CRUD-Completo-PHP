@@ -12,8 +12,10 @@ if(!empty($_POST['nome']) && isset($_POST['nome'])){
     $sql = "insert into usuarios set nome='$nome', email='$email';";
     $pdo->query($sql);
     echo "<center> <h1>Usuario adicionado</h1> </center>";
+
     echo "<p><a href='index.php'> Voltar para a home </a></p>";
 }else {
     echo "<center> <h2>Usuario nao adicionado</h2></center>";
     echo "<p><a href='index.php'> Voltar para a home </a></p>";
 }
+?>

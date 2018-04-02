@@ -14,9 +14,8 @@ if(isset($_POST['nome']) && !empty($_POST['nome'])){
     $nome = addslashes($_POST['nome']);
     $email = addslashes($_POST['email']);
 
-    $sql = "UPDATE usuarios set nome='$nome', email='$email';";
+    $sql = "UPDATE usuarios set nome='$nome', email='$email' where id =$id;";
     $pdo->query($sql);
-
     header("Location: index.php");
 }
 
@@ -31,7 +30,7 @@ if($sql->rowCount()>0){
 ?>
 
 <body>
-    <form action="editar.php" method="post">
+    <form action="editar.php?id=<?=$id?>" method="post">
         Nome:
         <br><br>
         <input type="text" name="nome" value="<?= $dado['nome'] ?>" autofocus>
@@ -42,5 +41,6 @@ if($sql->rowCount()>0){
         <br><br>
         <input type="submit">
     </form>
+
     <p> <a href="index.php">Voltar</a> </p>
 </body>
