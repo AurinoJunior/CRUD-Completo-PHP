@@ -2,9 +2,11 @@
 
 A unica tabela no banco tem esta estrutura
 
-create table usuarios(  
-id int auto_increment not null,  
-nome varchar(255),  
-email varchar(255),  
-primary key(id)  
-);
+CREATE TABLE `usuarios` (  
+  `id` int(11) NOT NULL AUTO_INCREMENT,  
+  `nome` varchar(255) DEFAULT NULL,  
+  `email` varchar(255) DEFAULT NULL,  
+  PRIMARY KEY (`id`)  
+)  
+ENGINE=InnoDB  
+DEFAULT CHARSET=utf8;  
