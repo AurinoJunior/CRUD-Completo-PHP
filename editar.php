@@ -28,7 +28,6 @@ if($sql->rowCount()>0){
     header("Location: index.php");
 }
 ?>
-
 <body>
     <form action="editar.php?id=<?=$id?>" method="post">
         Nome:

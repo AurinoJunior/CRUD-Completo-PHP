@@ -1,7 +1,7 @@
 <?php
 $dsn = "mysql:dbname=crud; host=localhost";
 $dbuser = "aurino";
-$dbpass="";
+$dbpass ="";
 
 try{
     $pdo = new PDO($dsn, $dbuser, $dbpass);

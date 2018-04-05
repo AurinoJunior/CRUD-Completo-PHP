@@ -1,5 +1,4 @@
 <?php include('config.php') ?>
-
 <html lang="pt-br">
     <head>
         <meta charset="utf-8">
