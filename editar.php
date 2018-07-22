@@ -1,9 +1,5 @@
-<head>
-    <meta charset="utf-8">
-    <title>Controle usuarios</title>
-    <link rel="stylesheet" href="estilo.css">
-</head>
 <?php
+include('cabecalho.php');
 include('config.php');
 
 if(isset($_GET['id']) && !empty($_GET['id'])){

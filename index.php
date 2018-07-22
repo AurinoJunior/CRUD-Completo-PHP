@@ -1,10 +1,7 @@
-<?php include('config.php') ?>
-<html lang="pt-br">
-    <head>
-        <meta charset="utf-8">
-        <title>Controle usuarios</title>
-        <link rel="stylesheet" href="estilo.css">
-    </head>
+<?php 
+    include('cabecalho.php');
+    include('config.php');
+?>
     <body>
         <table width="100%" border="0px">
             <tr>
